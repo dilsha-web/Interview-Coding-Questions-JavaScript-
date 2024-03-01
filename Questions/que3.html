@@ -1,0 +1,20 @@
+<script>
+  const arrayElements = [2, 3, 4, 2, 6, 4, 1, 9, 9];
+
+  //   checks if the index of the current item (item) is not equal to the first occurrence of that item in the array (arr.indexOf(item))
+
+  //   (item, index, array) =>: This part defines an arrow function with three parameters: item, index, and array. These parameters represent:
+
+  // item: The current element being processed in the array.
+  // index: The index of the current element in the array.
+  // array: The array being traversed.
+  // array.indexOf(item): This part of the condition uses the indexOf() method of the array to find the index of the first occurrence of the current element item in the array array.
+
+  // array.indexOf(item) != index: This part compares the index of the first occurrence of the current element item (found using indexOf(item)) with the current index index. If they are not equal, it means that the current element is not the first occurrence of that element in the array. In other words, it's a duplicate because its index is different from the index of its first occurrence.
+
+  const duplicates = arrayElements.filter(
+    (currentItem, index, array) => array.indexOf(currentItem) != index
+  );
+
+  console.log(duplicates);
+</script>

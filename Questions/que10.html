@@ -1,0 +1,13 @@
+<script>
+  const arrayElements = [7, 1, 3, 9, 3, 5, 2, 3, 1, 7, 9, 0];
+
+  const uniqueValue = arrayElements.filter(
+    (item, index, array) => array.indexOf(item) == index
+  );
+
+  uniqueValue.sort((a, b) => {
+    return a - b;
+  });
+
+  console.log(uniqueValue);
+</script>

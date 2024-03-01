@@ -1,0 +1,30 @@
+<!-- extract few fiels from given json object and form a new array  -->
+
+<script>
+  const info = {
+    students: [
+      {
+        name: "Dilsha",
+        age: 26,
+      },
+      {
+        name: "Mahinsa",
+        age: 28,
+      },
+      {
+        name: "Malsha",
+        age: 29,
+      },
+    ],
+  };
+
+  const details = info.students.map(function (item) {
+    let studobj = {
+      name: item.name,
+      age: item.age,
+    };
+    return studobj;
+  });
+
+  console.log(details);
+</script>

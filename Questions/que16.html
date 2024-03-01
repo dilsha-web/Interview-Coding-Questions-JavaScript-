@@ -1,0 +1,12 @@
+<!-- finding whether one array contains the elements of another array -->
+
+<script>
+  const arrayElements = [1, 5, 8, 3, 5, 8];
+  const arrayElements2 = [5, 7, 8, 9];
+
+  const sameELements = arrayElements.some((item) =>
+    arrayElements2.includes(item)
+  );
+
+  console.log(sameELements);
+</script>

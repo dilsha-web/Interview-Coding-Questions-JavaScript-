@@ -1,0 +1,17 @@
+<!-- uppercase the first charactor -->
+
+<script>
+  const arrayElements = [
+    "sunday",
+    "monday",
+    "tuesday",
+    "thursday",
+    "friday",
+    "saturday",
+  ];
+
+  for (let days of arrayElements) {
+    days = days.charAt(0).toUpperCase() + days.substring(1);
+    console.log(days);
+  }
+</script>

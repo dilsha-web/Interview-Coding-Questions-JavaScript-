@@ -1,0 +1,15 @@
+<!-- angram - a word which can be use to create another form of word. (Mary and Army) -->
+
+<script>
+  const s1 = "Mary";
+  const s2 = "Army";
+
+  function checkAnagram(s1, s2) {
+    var a = s1.toLowerCase().split("").sort().join("");
+    var b = s2.toLowerCase().split("").sort().join("");
+
+    return a === b;
+  }
+
+  console.log(checkAnagram(s1, s2));
+</script>

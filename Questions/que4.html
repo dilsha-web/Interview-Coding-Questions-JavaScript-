@@ -1,0 +1,21 @@
+<script>
+  const arrayElements = [3, 4, 5, 8, 1, 2, 5, 6, 9, 3, 4, 1];
+
+  // Using filter method to find duplicates
+  const duplicates = arrayElements.filter(
+    (item, index, array) => array.indexOf(item) != index
+  );
+
+  // Using reduce method to count occurrences of each element
+  const count = arrayElements.reduce((key, value) => {
+    if (key[value] == undefined) {
+      key[value] = 1;
+      return key;
+    } else {
+      key[value]++;
+      return key;
+    }
+  }, {});
+  console.log(duplicates);
+  console.log(count);
+</script>

@@ -1,0 +1,16 @@
+<script>
+  const arrayElements = [4, 53, 8, 2, 5, 9, -11];
+
+  //   finding the maximum value
+  const maxValue = arrayElements.reduce(function (prev, curr) {
+    return prev > curr ? prev : curr;
+  });
+  console.log("max value :", maxValue);
+
+  //   finding the minimum value
+  const minValue = arrayElements.reduce(function (prev, curr) {
+    return prev < curr ? prev : curr;
+  });
+
+  console.log("min value:", minValue);
+</script>

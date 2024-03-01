@@ -1,0 +1,18 @@
+<!-- Creating s class in javascript -->
+<script>
+  class Students {
+    constructor(name, age, gender) {
+      this.name = name; //properties
+      this.age = age;
+      this.gender = gender;
+    }
+
+    register() {
+      console.log(`Student's name:${this.name}`);
+      console.log(`Student's age:${this.age}`);
+      console.log(`Student's gender:${this.gender}`);
+    }
+  }
+  std1 = new Students("Dilsha", 26, "Female");
+  std1.register();
+</script>

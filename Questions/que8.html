@@ -1,0 +1,30 @@
+<script>
+  // Sorting list of strings
+  const arrayElements = ["A", "F", "C", "Y", "B"];
+  console.log(arrayElements.sort());
+
+  // Sorting list of integers
+  const arrayElementsNumbers = [4, 7, 1, 4, 9, 0];
+  const sortedArray = arrayElementsNumbers.sort((a, b) => {
+    return a - b;
+  });
+  console.log(sortedArray);
+
+  // Finding duplicates of an array
+  const duplicates = arrayElementsNumbers.filter(
+    (item, index, array) => array.indexOf(item) != index
+  );
+  console.log(duplicates);
+
+  // Finding the count of duplicates of an array
+  const duplicatesCount = arrayElementsNumbers.reduce((key, value) => {
+    if (key[value] == undefined) {
+      key[value] = 1;
+      return key;
+    } else {
+      key[value]++;
+      return key;
+    }
+  }, {});
+  console.log(duplicatesCount);
+</script>

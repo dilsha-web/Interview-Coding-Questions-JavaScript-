@@ -1,0 +1,30 @@
+<!-- Creating inheritance classes  -->
+
+<script>
+  class Students {
+    constructor(name, age) {
+      this.name = name;
+      this.age = age;
+    }
+
+    register() {
+      console.log(`Student's name:${this.name}`);
+      console.log(`Student's age:${this.age}`);
+    }
+  }
+
+  class StudentOne extends Students {
+    constructor(name, age, subject) {
+      super(name, age); // call the super class constructor
+      this.subject = subject;
+    }
+
+    studentRegistration() {
+      super.register();
+      console.log(`Subjects:${this.subject}`);
+    }
+  }
+
+  std1 = new StudentOne("Dilsha", 26, "Math");
+  std1.studentRegistration();
+</script>

@@ -1,0 +1,15 @@
+<script>
+  //constants can not be changed
+
+  let student = {
+    name: "Dilsha",
+    age: 26,
+    gender: "Female",
+  };
+
+  Object.freeze(student); //without error it will provide the output without updating the value
+
+  student.name = "Rameshi";
+
+  console.log(student.name);
+</script>
